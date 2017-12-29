@@ -1,0 +1,21 @@
+{
+  "name": "parcelapp",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html -d build --public-url .\nnode tool/inline.js",
+    "upfont": "node tool/fontello.js update",
+    "editfont": "node tool/fontello.js edit"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "dot": "^1.1.2",
+    "fontello-update": "^0.6.3",
+    "inline-source": "^5.2.6",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-modules": "^1.1.0",
+    "postcss-nested": "^3.0.0"
+  }
+}

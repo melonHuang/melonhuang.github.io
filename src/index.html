@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Wendy Huang - I want to build tools for humans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <!--
+    <link media="print" rel="stylesheet" href="./print.css">
+    -->
+    <link rel="shortcut icon" type="image/png" href="img/myfavicon.png"/>
+    <meta name="description" content="Wendy Huang, nickname Melon, enjoying life as a Front-End Engineer">
+  </head>
+  <body>
+    <main>
+      <section class="Intro">
+        <div class="Card">
+          <div class="u-text-center">
+            <img class="Card-avatar" src="img/avatar.png" alt="">
+            <h2 class="Card-name">Melon Huang</h2>
+            <p class="Card-title">Front-end Engineer</p>
+          </div>
+          <hr>
+          <p class="Card-intro">
+            My name is Wei Huang, also known as Melon. <br>
+            I used to work in the lovely Front-end Team 奇舞团.
+            Crafting interesting and useful tools is my jam.
+            Welcome to say hi on Twitter.
+          </p>
+          <hr>
+          <ul class="ContactList u-reset-ul">
+            <li class="ContactList-item"><a target="blank" href="https://github.com/melonHuang"><i class="icon-github-circled"></i></a></li>
+            <li class="ContactList-item"><a target="blank" href="https://twitter.com/melonh0327"><i class="icon-twitter"></i></a></li>
+            <li class="ContactList-item"><a target="blank" href="https://www.linkedin.com/in/melonhuang/"><i class="icon-linkedin"></i></a></li>
+            <li class="ContactList-item"><a href="mailto:melonh0327@gmail.com"><i class="icon-mail"></i></a></li>
+            <li class="ContactList-item"><a target="blank" href="https://melonhuang.github.io/resume/me.html"><i class="icon-resume"></i></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="Projects">
+        <script id="project_tmpl" type="template">
+        <div class="Projects-inner">
+          <h2 class="Projects-title">Speakings</h2>
+          <ul class="u-reset-ul ProjectList">
+            {{~ it.speakings :speak}}
+            <li class="Project ProjectList-item">
+              <a target="blank" href="{{= speak.link}}">
+                <h3 class="Project-title">{{= speak.name}}</h3>
+                <p class="Project-desc">{{= speak.time}}</p>
+              </a>
+            </li>
+            {{~}}
+          </ul>
+        </div>
+        <div class="Projects-inner">
+          <h2 class="Projects-title">Projects</h2>
+          <ul class="u-reset-ul ProjectList">
+            {{~ it.projects :project}}
+            <li class="Project ProjectList-item">
+              <a target="blank" href="{{= project.link}}">
+                <h3 class="Project-title Project-title--short">{{= project.name}}</h3>
+                <p class="Project-desc">{{= project.desc}}</p>
+              </a>
+            </li>
+            {{~}}
+          </ul>
+        </div>
+        </script>
+      </section>
+    </main>
+    <script src="js/index.js">
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+{
+	"name": "",
+	"css_prefix_text": "icon-",
+	"css_use_suffix": false,
+	"hinting": true,
+	"units_per_em": 1000,
+	"ascent": 850,
+	"glyphs": [
+		{
+			"uid": "c64623255a4a7c72436b199b05296c4f",
+			"css": "emo-happy",
+			"code": 59392,
+			"src": "fontelico"
+		},
+		{
+			"uid": "627abcdb627cb1789e009c08e2678ef9",
+			"css": "twitter",
+			"code": 61593,
+			"src": "fontawesome"
+		},
+		{
+			"uid": "e9107949dd6c9e8ab2b29ae07156e38c",
+			"css": "linkedin",
+			"code": 61665,
+			"src": "fontawesome"
+		},
+		{
+			"uid": "0f6a2573a7b6df911ed199bb63717e27",
+			"css": "github-circled",
+			"code": 61595,
+			"src": "fontawesome"
+		},
+		{
+			"uid": "937f4db8b6ff3348a1d9fcd5e12fd2fe",
+			"css": "mail",
+			"code": 59393,
+			"src": "iconic"
+		},
+		{
+			"uid": "6a1c2df68ab91367372b48506ebb8252",
+			"css": "resume",
+			"code": 59394,
+			"src": "custom_icons",
+			"selected": true,
+			"svg": {
+				"path": "M187.5 62.5H812.5C850 62.5 875 87.5 875 125V875C875 912.5 850 937.5 812.5 937.5H187.5C150 937.5 125 912.5 125 875V125C125 87.5 150 62.5 187.5 62.5ZM387.5 425C387.5 537.5 456.3 537.5 450 575 450 612.5 337.5 581.2 312.5 656.3 312.5 675 318.8 687.5 337.5 687.5H662.5C681.3 687.5 693.8 675 687.5 656.3 662.5 581.3 550 606.3 550 575 550 537.5 618.8 537.5 618.8 425 612.5 362.5 562.5 312.5 500 312.5S381.3 362.5 387.5 425Z",
+				"width": 1000
+			},
+			"search": [
+				"resume"
+			]
+		}
+	],
+	"session": "09062e3dedab7d4232aea7249d8e9abf"
+}
