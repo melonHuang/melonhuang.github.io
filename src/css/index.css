@@ -242,6 +242,7 @@ body {
 
   .Projects {
     text-align: center;
+    height: auto;
     overflow: visible;
   }
 
