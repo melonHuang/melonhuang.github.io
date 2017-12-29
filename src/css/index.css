@@ -191,7 +191,7 @@ body {
 
 @media (max-width:1120px) {
   html, body, main {
-    overflow: auto;
+    overflow: visible;
   }
   .Intro,
   .Projects
@@ -212,7 +212,7 @@ body {
       display: block;
       height: 60px;
       width: 60px;
-      border: 3px solid color(white alpha(.9));
+      border: 3px solid color(white alpha(.7));
       border-right: 0;
       border-bottom: 0;
       bottom: 0px;
@@ -223,7 +223,7 @@ body {
   }
 
   @keyframes arrow {
-    0 {
+    0% {
       opacity: 0;
       transform: translate3d(-50%, 20%, 0) rotateZ(45deg) scale(.5);
     }
@@ -242,10 +242,11 @@ body {
 
   .Projects {
     text-align: center;
-    height: auto;
+    overflow: visible;
   }
 
   .ProjectList {
-    justify-content: center
+    justify-content: center;
+    margin: 0;
   }
 }
