@@ -35,6 +35,7 @@ body {
 
 .Intro {
   display: flex;
+  flex-wrap: wrap;
   width: 50%;
   position: absolute;
   top: 0;
@@ -185,5 +186,66 @@ body {
 
   &-desc {
     color: color(white alpha(.8))
+  }
+}
+
+@media (max-width:1120px) {
+  html, body, main {
+    overflow: auto;
+  }
+  .Intro,
+  .Projects
+  {
+    width: 100%;
+    position: static;
+
+    &-inner {
+      width: 100%;
+    }
+  }
+
+  .Intro {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      height: 60px;
+      width: 60px;
+      border: 3px solid color(white alpha(.9));
+      border-right: 0;
+      border-bottom: 0;
+      bottom: 0px;
+      left: 50%;
+      transform: translate3d(-50%, 20%, 0) rotateZ(45deg) scale(.5);
+      animation: arrow 2s infinite;
+    }
+  }
+
+  @keyframes arrow {
+    0 {
+      opacity: 0;
+      transform: translate3d(-50%, 20%, 0) rotateZ(45deg) scale(.5);
+    }
+    15% {
+      opacity: 80%;
+    }
+    90% {
+      opacity: 100%;
+      transform: translate3d(-50%, 0%, 0) rotateZ(45deg) scale(.5);
+    }
+    100% {
+      opacity: 0;
+      transform: translate3d(-50%, -15%, 0) rotateZ(45deg) scale(.5);
+    }
+  }
+
+  .Projects {
+    text-align: center;
+    height: auto;
+  }
+
+  .ProjectList {
+    justify-content: center
   }
 }
