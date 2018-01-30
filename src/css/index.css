@@ -62,6 +62,7 @@ body {
 
   &-avatar {
     width: 145px;
+    border-radius: 50%;
   }
 
   &-name {
